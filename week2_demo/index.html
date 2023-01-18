@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--IN-DOCUMENT STYLING-->
+    <style>
+        /*we write CSS in here*/
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page
+
+                *by ELEMENT type        ex: body, div, p
+                *by ID attribute        ex: #wrapper, #nav, #footer, #title
+                *by CLASS attribute     ex: coming in week 3 :]
+        */
+
+        div {/*applies to all divs within the page*/
+
+            border:1px solid black;
+            padding:10px; /*adds 10px of space to all 4 sides inbetween content & border*/
+            margin:5px;/*adds 5px of space between elements (space added outside of border)*/
+
+        }
+
+        #wrapper {/*# specifies ID name, only applies to single element with that ID */
+
+            background-color:white;
+
+        }
+
+        #nav{
+            background-color:grey;
+        }
+
+    </style>
+
+</head>
+<body style="background-color:grey">
+
+    <div id="wrapper"><!--"wrapper" wraps around all content on the page-->
+
+        <h1 id="header">KT</h1>
+
+        <!--NAV SECTION-->
+        <div id="nav">
+
+            <!--EXTERNAL LINKS: links that go to pages outside of our website-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+            <!--href holds the URL of webiste linking to-->
+            <!--target="_blank" opens link in a new tab in browser-->
+
+            <!--INTERNAL LINKS: links to pages within the root folder; additional html pages within the site-->
+            <a href="page2.html">Page 2</a>
+
+            <!--IN-PAGE JUMP LINKS: links using #IDvalues that jump a user from one section in the current page to another section in the current page-->
+            <a href="#bio">BIO</a>
+            <a href="#schooling">SCHOOLING</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+
+        </div><!--/#nav-->
+
+
+        <!--BIO SECTION-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+            <!--ABSOLUTE IMAGE PATH (REMOTE IMAGES) these images are NOT found in your root folder, so must include a(n) "http" at the beginning of their source-->
+
+            <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/c/c5/Eddard_stark_and_ice.jpg" alt="Eddard Stark, Warden of the North, contemplating death while holding Ice the Great Sword out in a luscious green field" style="width:500px">
+
+            <!--RELATIVE IMAGE LINKS these are images that are found within our root folder-->
+            <img src="images/stormsEnd.jpg" alt="An illustration of Storm's End castle in Spring" style="width:500px">
+
+            <!--required attributes:
+                    *src  provides the path to the image file, either remote or relative
+                    *alt  provides alternative text for written page display if image link is broken OR for accessibility of screenreaders-->
+
+        </div><!--/#bio-->
+
+        <hr>
+
+        <!--SCHOOLING SECTION-->
+        <div id="schooling">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>Schooling 1</li>
+                <li>Schooling 2</li>
+                <li>Schooling 3</li>
+            </ol>
+
+
+            <!--RELATIVE IMAGE ELEMENT-->
+            <img src="images/meca.jpg" alt="Porteous Building at Dusk, Portland ME" style="width:500px">
+
+        </div><!--/#schooling-->
+
+        <hr>
+
+        <!--HOBBIES SECTION-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            <ul>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+            </ul>
+
+            
+
+
+
+        </div><!--/#hobbies-->
+
+        <hr>
+
+        <!--FOOTER SECTION-->
+        <div id="footer">
+
+            <a href="#header">Back to Top</a>
+            <br>
+            <p>&copy; K TRUCHON | SE111 | Winter 2023</p>
+            <img src="images/w2Validation.png" alt="Validation Screenshot" style="width:100%">
+
+        </div><!--/#footer-->
+
+
+
+    </div><!--/div-->
+
+</body>
+</html>
