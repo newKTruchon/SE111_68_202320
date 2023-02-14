@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="K TRUCHON">
+    <meta name="description" content="W6 Demo - JS Intro">
+    
+    <title>W6 | Intro to JS</title>
+</head>
+<body>
+    <!--we should have some sort of HTML in the file-->
+    <h1>Week 6 Intro Demo | Javascript</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <script>
+
+        //everything inside of the <script> tags MUST be written in JAVASCRIPT
+
+        //creating (declaring) a variable -- keyword "var"
+        var num1 = 10
+        var num2 = 7 
+
+        //cannot use num1 or num2 until they have value assigned (=)
+        //variable assignment --> DEFINITION
+
+        var sum = num1 + num2
+
+        //test our value in the console - displaying variable values
+        console.log(num1, num2, sum) //use for testing
+        console.log(sum)
+
+        //alert() allows for a pop-up in the browser page to display info to the user
+        //alert() ---> print() in PYTHON
+        //alert(sum)  //just displays stored value
+        //alert("The sum is: " + sum + "!") // displays string then stored value
+        //alert(`The sum is: ${sum}!`) //literal strings :D
+
+        //escape sequences also work in Javascript \n (inside of strings!)
+        console.log(`The sum of \n${num1}\n+\n${num2}\n=${sum}`)
+        //alert(`The sum is: \n${sum}!`)
+
+
+        //prompts user for value; waits for ENTER key
+        //prompt() ---> input() in PYTHON
+        //prompt(`${sum}\nEnter your name: `)
+
+        //use the value provided by the user by ASSIGNING TO A VARIABLE
+        var name = prompt(`Enter your name: `)
+
+        console.log(`Name entered: ${name}`)
+
+        //all data returned from prompt() is a STRING; must convert to Number() if we want to math
+        //UPDATE FEB 2023 - JavaScript no longer needs casting for numbers
+        //var num = Number(prompt(`Enter a number: `))
+        var num = prompt(`Enter a number: `)
+        var square = num * num
+
+        console.log(square.toFixed(2))
+
+    </script>
+
+</body>
+</html>
